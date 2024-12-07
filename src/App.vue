@@ -29,7 +29,7 @@ import MailChimp from './components/MailChimp.vue'
     </nav> -->
   </header>
 
-  <!-- <RouterView /> -->
+  <RouterView />
 
   <footer>
     <div class="footer-connect-container">
