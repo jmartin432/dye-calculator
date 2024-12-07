@@ -189,8 +189,10 @@ import GoFundMe from '../components/GoFundMe.vue'
   --whatWeOfferCardColor1: var(--card-color-1);
   --whatWeOfferCardColor2: var(--card-color-2);
   background:
-    url('@/assets/images/winking-rat.svg') no-repeat center/auto 90%,
-    linear-gradient(var(--whatWeOfferCardColor1), var(--whatWeOfferCardColor2));
+    /* url('@/assets/images/winking-rat.svg') no-repeat center/auto 90%, */ linear-gradient(
+    var(--whatWeOfferCardColor1),
+    var(--whatWeOfferCardColor2)
+  );
   border: solid 1px var(--border-color);
   border-radius: 5px;
   width: 80%;
@@ -211,8 +213,10 @@ import GoFundMe from '../components/GoFundMe.vue'
     width: 90%;
     margin: auto;
     background:
-      url('@/assets/images/winking-rat.svg') no-repeat center/auto 70%,
-      linear-gradient(var(--whatWeOfferCardColor1), var(--whatWeOfferCardColor2));
+      /* url('@/assets/images/winking-rat.svg') no-repeat center/auto 70%, */ linear-gradient(
+      var(--whatWeOfferCardColor1),
+      var(--whatWeOfferCardColor2)
+    );
   }
 }
 
