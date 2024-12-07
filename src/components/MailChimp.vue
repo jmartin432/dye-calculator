@@ -27,12 +27,12 @@
               <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
             </div>
             <div class="mc-field-group form-item">
-              <label for="mce-FNAME">Name <span class="asterisk">*</span></label>
+              <label for="mce-FULLNAME">Name <span class="asterisk">*</span></label>
               <input
                 type="text"
-                name="FNAME"
+                name="FULLNAME"
                 class="required text"
-                id="mce-FNAME"
+                id="mce-FULLNAME"
                 required=""
                 value=""
               />
