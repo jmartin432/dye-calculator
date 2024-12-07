@@ -18,15 +18,15 @@ import MailChimp from './components/MailChimp.vue'
         <h2>Community Art Events</h2>
       </div>
     </div>
-    <!-- <nav>
-      <RouterLink to="/">Home</RouterLink>
+    <nav>
+      <!-- <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/artists">Artists</RouterLink>
       <RouterLink to="/studios">Studios</RouterLink>
       <RouterLink to="/events">Events</RouterLink>
       <RouterLink to="/workshops">Workshops</RouterLink>
       <RouterLink to="/contact">Contact</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav> -->
+      <RouterLink to="/about">About</RouterLink> -->
+    </nav>
   </header>
 
   <RouterView />
