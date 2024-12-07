@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Loom 1",
+    "available": false,
+    "rent": 150,
+    "squareFeet": null,
+    "notes": "This is a heavy-duty, 8-shaft floor loom for rent on a monthly basis.",
+    "dateAvailable": "2024-01-23"
+  },
+  {
+    "name": "Loom 2",
+    "available": false,
+    "rent": 150,
+    "squareFeet": null,
+    "notes": "This is a heavy-duty, 8-shaft floor loom for rent on a monthly basis.",
+    "dateAvailable": "2024-01-23"
+  },
+  {
+    "name": "Studio A",
+    "available": false,
+    "rent": null,
+    "squareFeet": null,
+    "notes": null,
+    "dateAvailable": null
+  },
+  {
+    "name": "Studio D",
+    "available": true,
+    "rent": 423,
+    "squareFeet": 210,
+    "notes": "This is a large studio on the ground floor. It is approximately 14'x15'. It features easy access to a large utility sink, the kitchenette and a large common area.",
+    "dateAvailable": "2024-09-01"
+  },
+  {
+    "name": "Studio E",
+    "available": false,
+    "rent": 600,
+    "squareFeet": 280,
+    "notes": "This is a large studio on the ground floor. It has a big window for natural light. There is an option to rent half of this space (for half the rent) and share with another artist.",
+    "dateAvailable": "2024-03-01"
+  },
+  {
+    "name": "Studio E1",
+    "available": false,
+    "rent": 300,
+    "squareFeet": 140,
+    "notes": "This is half of a large studio space and is shared with another artist currently there. The full space is 14' x 20' and half of that is available for rent.",
+    "dateAvailable": "2023-12-30"
+  },
+  {
+    "name": "Studio E2",
+    "available": false,
+    "rent": 300,
+    "squareFeet": 140,
+    "notes": "This is half of a large studio space and is shared with another artist currently there. The full space is 14' x 20' and half of that is available for rent.",
+    "dateAvailable": "2023-12-30"
+  },
+  {
+    "name": "Studio J",
+    "available": false,
+    "rent": 300,
+    "squareFeet": 110,
+    "notes": null,
+    "dateAvailable": "2023-12-30"
+  },
+  {
+    "name": "Studio K",
+    "available": true,
+    "rent": 282,
+    "squareFeet": 110,
+    "notes": "This is a 10' x 11' space on the lower level downstairs. It features easy access to a large utility sink, the backyard and a large common area.",
+    "dateAvailable": "2023-12-30"
+  },
+  {
+    "name": "Studio L",
+    "available": false,
+    "rent": 450,
+    "squareFeet": 216,
+    "notes": null,
+    "dateAvailable": "2023-12-30"
+  },
+  {
+    "name": "Studio N",
+    "available": true,
+    "rent": 235,
+    "squareFeet": 155,
+    "notes": "This is half of a larger studio and would be shared with another artist currently there. This space is on the lower level downstairs and is approximately 15.5' x 10'. It features easy access to a large utility sink, the backyard and a large common area.",
+    "dateAvailable": "2023-12-30"
+  },
+  {
+    "name": "Studio Q",
+    "available": false,
+    "rent": 175,
+    "squareFeet": 80,
+    "notes": "This is an open space on the lower floor. It does not have walls but you have approximately 80 square feet to set up as you like.",
+    "dateAvailable": "2024-01-08"
+  },
+  {
+    "name": "Studio R",
+    "available": false,
+    "rent": 175,
+    "squareFeet": 80,
+    "notes": "This is an open space on the lower floor. It does not have walls but you have approximately 80 square feet to set up as you like.",
+    "dateAvailable": "2024-01-08"
+  }
+]

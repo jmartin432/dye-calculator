@@ -1,0 +1,68 @@
+label {
+    color: #ffffff;
+    margin: 0 0 .5rem 0;
+    display: block;
+}
+
+input, select, textarea {
+    padding: .25rem;
+    font-size: 1rem;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+input:focus, select:focus, textarea:focus {
+    transition-duration: 0.4s;
+    box-shadow: var(--input-shadow);
+}
+
+.required-warning {
+    color: var(--required-color);
+}
+
+.form-container {
+    width: 80%;
+    margin: auto;
+    padding: 2.5rem;
+}
+
+@media (max-width: 600px) {
+    
+    .form-container {
+        width: 90%;
+        padding: 1rem;
+    }
+}
+
+.form-item {
+    margin-top: 1.25rem;
+}
+
+.form-item input, .form-item select {
+    width: 30%;
+}
+
+@media (max-width: 600px) {
+    .form-item input, .form-item select {
+        width: 60%;
+    }
+}
+
+.form-item textarea {
+    width: 60%;
+}
+
+@media (max-width: 600px) {
+    .form-item textarea {
+        width: 80%;
+    }
+}
+
+.nobueno{
+    height: 0;
+    width: 0;
+    margin: 0;
+    overflow: hidden;
+}

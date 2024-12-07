@@ -1,0 +1,239 @@
+@import '../base.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: #191919;
+    --border-color: #d6d681;
+    --button-border-color: #AA81D6;
+    --button-text-color: #AA81D6;
+    --button-bg-color: #333;
+    --button-shadow: 5px 5px 10px #AA81D6dd, -5px -5px 10px #AA81D6dd, -5px 5px 10px #AA81D6dd, 5px -5px 10px #AA81D6dd;
+    --input-shadow: 5px 5px 10px #AA81D6dd, -5px -5px 10px #AA81D6dd, -5px 5px 10px #AA81D6dd, 5px -5px 10px #AA81D6dd;
+    --required-color: #d73928;
+
+    --h1-color: #81D6CC;
+    --h1-desktop-size: 4rem;
+    --h1-mobile-size: 2rem;
+    --h1-font-family: 'Oswald';
+    --h1-font-weight: 700;
+
+    --h2-color: #D69C81;
+    --h2-desktop-size: 3rem;
+    --h2-mobile-size: 1.75rem;
+    --h2-font-family: 'Poppins';
+    --h2-font-weight: 400;
+
+    
+    --h3-color: #81D6CC;
+    --h3-desktop-size: 2rem;
+    --h3-mobile-size: 1.5rem;
+    --h3-font-family: 'Poppins';
+    --h3-font-weight: 400;
+
+    
+    --h4-color: #D69C81;
+    --h4-desktop-size: 1.9rem;
+    --h4-mobile-size: 1.25rem;
+    --h4-font-family: 'Poppins';
+    --h4-font-weight: 400;
+
+    --h5-color: #FFFFFF;
+    --h5-desktop-size: 1.25rem;
+    --h5-mobile-size: .8rem;
+    --h5-font-family: 'Poppins';
+    --h5-font-weight: 400;
+
+    --nav-a-color: #AA81D6;
+    --nav-a-hover-bg-color: #cccccc33;
+    --main-a-color: #AA81D6;
+    --nav-a-desktop-size: 1rem;
+    --nav-a-mobile-size: .8rem;
+    --main-a-desktop-size: 1rem;
+    --main-a-mobile-size: .8rem;
+
+    --main-p-color: #fff;
+    --p-desktop-size: 1.25rem;
+    --p-mobile-size: 1rem;
+
+    --card-color-1: #d6d68111;
+    --card-color-2: #d6d68133;
+}
+
+[data-theme="dark"] {
+    --main-bg-color: #191919;
+    --border-color: #d6d681;
+    --button-border-color: #AA81D6;
+    --button-text-color: #AA81D6;
+    --button-bg-color: #333;
+    --button-shadow: 5px 5px 10px #AA81D6dd, -5px -5px 10px #AA81D6dd, -5px 5px 10px #AA81D6dd, 5px -5px 10px #AA81D6dd;
+    --input-shadow: 5px 5px 10px #AA81D6dd, -5px -5px 10px #AA81D6dd, -5px 5px 10px #AA81D6dd, 5px -5px 10px #AA81D6dd;
+    --required-color: #d73928;
+    --h1-color: #81D6CC;
+    --h2-color: #D69C81;
+    --h3-color: #81D6CC;
+    --h4-color: #D69C81;
+    --h5-color: #FFFFFF;
+    --nav-a-color: #AA81D6;
+    --nav-a-hover-bg-color: #cccccc33;
+    --main-a-color: #AA81D6;
+    --main-p-color: #fff;
+    --card-color-1: #d6d68111;
+    --card-color-2: #d6d68133;
+}
+
+[data-theme="light"] {
+    --main-bg-color: #d3d2d2;
+    --border-color: #ca142f;
+    --button-border-color: #07bce9;
+    --button-text-color: #07bce9;
+    --button-bg-color: #333;
+    --button-shadow: 5px 5px 10px #AA81D6dd, -5px -5px 10px #AA81D6dd, -5px 5px 10px #AA81D6dd, 5px -5px 10px #AA81D6dd;
+    --input-shadow: 5px 5px 10px #AA81D6dd, -5px -5px 10px #AA81D6dd, -5px 5px 10px #AA81D6dd, 5px -5px 10px #AA81D6dd;
+    --required-color: #d73928;
+    --h1-color: #df0991;
+    --h2-color: #D69C81;
+    --h3-color: #81D6CC;
+    --h4-color: #D69C81;
+    --h5-color: #FFFFFF;
+    --nav-a-color: #AA81D6;
+    --nav-a-hover-bg-color: #cccccc33;
+    --main-a-color: #AA81D6;
+    --main-p-color: #000000;
+    --card-color-1: #07bce911;
+    --card-color-2: #07bce933;
+}
+
+
+@property --whatWeOfferCardColor1 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --whatWeOfferCardColor2 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --artistCardColor1 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --artistCardColor2 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --studioCardColor1 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --studioCardColor2 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --workshopCardColor1 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --workshopCardColor2 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --eventCardColor1 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+@property --eventCardColor2 {
+    syntax: '<color>';
+    initial-value: #ffffff00;
+    inherits: false;
+}
+
+#app {
+    max-width: 1280px;
+    height: max-content;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    #app {
+        padding: 1rem .5rem;
+    }
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 0;
+}
+
+/* VIEWS */
+
+.view-container {
+    margin: 3rem 0;
+}
+
+@media (max-width: 600px) {
+    .view-container {
+        margin: 1.5rem 0;
+    }
+}
+
+/* SECTIONS */
+
+section {
+    margin: 2rem 0;
+}
+
+@media (max-width: 600px) {
+    section {
+        margin: 1.5rem 0;
+    }
+}
+
+button {
+    background-color: var(--button-bg-color);
+    border: 2px solid var(--button-border-color);
+    border-radius: 4px;
+    color: var(--button-text-color);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+    font-family: 'Open sans';
+}
+
+button:hover {
+    box-shadow: var(--button-shadow);
+    cursor: pointer;
+}
+
+button:disabled {
+    border: 2px solid grey;
+    color: grey;
+    box-shadow: none;
+    cursor: default
+}
+
