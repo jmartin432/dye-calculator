@@ -47,9 +47,9 @@ import GoFundMe from '../components/GoFundMe.vue'
         experience.
       </p>
     </section>
-    <section id="slideshow-section" class="home-section">
+    <!-- <section id="slideshow-section" class="home-section">
       <SlideShow />
-    </section>
+    </section> -->
     <!-- <section id="what-we-offer-section" class="home-section">
             <h3 id="what-we-offer-header">What We Offer</h3>
             <div id="what-we-offer-cards-container">

@@ -18,7 +18,7 @@ import MailChimp from './components/MailChimp.vue'
         <h2>Community Art Events</h2>
       </div>
     </div>
-    <nav>
+    <!-- <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/artists">Artists</RouterLink>
       <RouterLink to="/studios">Studios</RouterLink>
@@ -26,10 +26,10 @@ import MailChimp from './components/MailChimp.vue'
       <RouterLink to="/workshops">Workshops</RouterLink>
       <RouterLink to="/contact">Contact</RouterLink>
       <RouterLink to="/about">About</RouterLink>
-    </nav>
+    </nav> -->
   </header>
 
-  <RouterView />
+  <!-- <RouterView /> -->
 
   <footer>
     <div class="footer-connect-container">
@@ -37,7 +37,7 @@ import MailChimp from './components/MailChimp.vue'
       <div id="footer-social-icons">
         <h3>Follow Us on Social Media</h3>
         <div class="social-icon-container">
-          <a href="https://www.instagram.com/bridgeratstudios/" target="_blank">
+          <a href="https://www.instagram.com/bigbridgearts/" target="_blank">
             <img
               class="social-icon"
               src="./assets/icons/instagram.svg"
@@ -45,7 +45,7 @@ import MailChimp from './components/MailChimp.vue'
               alt="Instagram Logo"
             />
           </a>
-          <a href="https://www.facebook.com/bridgeratstudios" target="_blank">
+          <a href="https://www.facebook.com/bigbridgearts" target="_blank">
             <img
               class="social-icon"
               src="./assets/icons/facebook.svg"
@@ -59,7 +59,7 @@ import MailChimp from './components/MailChimp.vue'
     <div class="footer-message">
       <span class="footer-emoji footer-emoji-flipped">🐀</span
       ><span id="footer-text"
-        >&nbsp;&nbsp;&#169; {{ copyrightYear }} - Bridge Rat Studios&nbsp;&nbsp;</span
+        >&nbsp;&nbsp;&#169; {{ copyrightYear }} - Big Bridge Arts&nbsp;&nbsp;</span
       ><span class="footer-emoji">🐀</span>
     </div>
   </footer>
