@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;700&family=Open+Sans:wght@400;500&family=Oswald:wght@700&family=Poppins:wght@500&display=swap");
+@import url("forms.css");
+@import url("stripe.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: #191919;
+    /* --main-bg-color: #191919; */
+    --border-width: 2px;
+    --border-style: solid;
+    --border-color: #d6d681;
+    --button-border-color: #aa81d6;
+    --button-text-color: #aa81d6;
+    --button-bg-color: #212121;
+    --button-shadow: 5px 5px 10px #aa81d6dd, -5px -5px 10px #aa81d6dd,
+        -5px 5px 10px #aa81d6dd, 5px -5px 10px #aa81d6dd;
+    --input-shadow: 5px 5px 10px #aa81d6dd, -5px -5px 10px #aa81d6dd,
+        -5px 5px 10px #aa81d6dd, 5px -5px 10px #aa81d6dd;
+
+    --h1-color: #81d6cc;
+    --h1-desktop-size: 4rem;
+    --h1-mobile-size: 2rem;
+    --h1-font-family: "Oswald";
+    --h1-font-weight: 700;
+
+    --h2-color: #d69c81;
+    --h2-desktop-size: 3rem;
+    --h2-mobile-size: 1.75rem;
+    --h2-font-family: "Poppins";
+    --h2-font-weight: 400;
+
+    --h3-color: #81d6cc;
+    --h3-desktop-size: 2rem;
+    --h3-mobile-size: 1.5rem;
+    --h3-font-family: "Poppins";
+    --h3-font-weight: 400;
+
+    --h4-color: #d69c81;
+    --h4-desktop-size: 1.9rem;
+    --h4-mobile-size: 1.25rem;
+    --h4-font-family: "Poppins";
+    --h4-font-weight: 400;
+
+    --h5-color: #ffffff;
+    --h5-desktop-size: 1.25rem;
+    --h5-mobile-size: 0.8rem;
+    --h5-font-family: "Poppins";
+    --h5-font-weight: 400;
+
+    --nav-a-color: #aa81d6;
+    --nav-a-hover-bg-color: #cccccc33;
+    --main-a-color: #aa81d6;
+    --nav-a-desktop-size: 1rem;
+    --nav-a-mobile-size: 0.8rem;
+    --main-a-desktop-size: 1rem;
+    --main-a-mobile-size: 0.8rem;
+
+    --p-color: #fff;
+    --p-desktop-size: 1.25rem;
+    --p-mobile-size: 1rem;
+
+    --span-color: #fff;
+    --span-desktop-size: 1.25rem;
+    --span-mobile-size: 1rem;
+    --required-color: #d73928;
+
+    --card-color-1: #d6d68111;
+    --card-color-2: #d6d68133;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    padding: 2rem;
+}
+
+/* HEADER */
+
+header {
+    padding: 1rem;
+    border-bottom: var(--border-width) var(--border-style) var(--border-color);
+}
+
+h1 {
+    color: var(--h1-color);
+    text-align: left;
+    font-size: var(--h1-desktop-size);
+    font-family: var(--h1-font-family);
+    font-weight: var(--h1-font-weight);
+}
+
+h2 {
+    color: var(--h2-color);
+    text-align: left;
+    font-size: var(--h2-desktop-size);
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+}
+
+/* MAIN */
+
+#main {
+    padding: 1rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h3 {
+    color: var(--h3-color);
+    text-align: center;
+    font-size: var(--h3-desktop-size);
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+}
+
+p {
+    color: var(--p-color);
+    font-size: var(--p-desktop-size);
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+span {
+    color: var(--span-color);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 1rem;
+    border-top: var(--border-width) var(--border-style) var(--border-color);
+}
+
+.footer-connect-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+    .footer-connect-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+footer .social-icon-container {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-h3 {
+    font-size: 1.25rem;
+}
+
+.social-icon {
+    width: 2.5rem;
+}
+
+.footer-message {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+    .footer-message {
+        font-size: 0.75rem;
+    }
+}
+
+.footer-emoji {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .footer-emoji {
+        font-size: 1rem;
+    }
+}
+
+.footer-emoji-flipped {
+    transform: scale(-1, 1);
+}

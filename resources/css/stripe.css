@@ -1,0 +1,24 @@
+/* .BuyButton-Button {
+  background-color: #EB649C !important;
+} */
+
+.recurring-donation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+    .recurring-donation-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+.stripe-button-container {
+    text-align: center;
+}
+
+.stripe-button {
+    display: inline-block;
+}
