@@ -77,6 +77,10 @@ body {
     padding: 2rem;
 }
 
+.hidden {
+    display: none;
+}
+
 /* HEADER */
 
 header {
@@ -123,6 +127,8 @@ p {
     font-size: var(--p-desktop-size);
     text-align: center;
     padding: 2rem 0 1rem 0;
+    width: 60%;
+    margin: auto;
 }
 
 span {
