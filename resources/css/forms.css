@@ -38,7 +38,7 @@ textarea:focus {
 
 @media (max-width: 600px) {
     .form-container {
-        width: 90%;
+        width: 100%;
         padding: 1rem;
     }
 }
