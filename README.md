@@ -1,3 +1,3 @@
-# big-bridge-arts
+# Dye Calculator
 
 Yay Art!

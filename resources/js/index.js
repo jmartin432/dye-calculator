@@ -1,184 +1,321 @@
-const contactFormLabels = {
-    topicLabel: {
-        id: "topic-label",
-        label: "Topic",
+const dyes = {
+    brightYellow: {
+        name: "Bright Yellow",
+        value: "brightYellow",
+        color: "yellow",
+        percentOWG: 0,
+        gramsPerPound: 0,
+        ouncesPerPound: 0,
+        turquoise: false,
     },
-    nameLabel: {
-        id: "name-label",
-        label: "Name",
+    daffodil: {
+        name: "Daffodil",
+        value: "daffodil",
+        color: "yellow",
+        percentOWG: 0,
+        gramsPerPound: 0,
+        ouncesPerPound: 0,
+        turquoise: false,
     },
-    emailLabel: {
-        id: "email-label",
-        label: "Email",
+    deepYellow: {
+        name: "Deep Yellow",
+        value: "deepYellow",
+        color: "yellow",
+        percentOWG: 0,
+        gramsPerPound: 0,
+        ouncesPerPound: 0,
+        turquoise: false,
     },
-    messageLabel: {
-        id: "message-label",
-        label: "Message",
+    orangeSorbet: {
+        name: "Orange Sorbet",
+        value: "orangeSorbet",
+        color: "orange",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
+    },
+    watermelon: {
+        name: "Watermelon",
+        value: "watermelon",
+        color: "orange",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
+    },
+    softOrange: {
+        name: "Soft Orange",
+        value: "softOrange",
+        color: "orange",
+        percentOWG: 0,
+        gramsPerPound: 0,
+        ouncesPerPound: 0,
+        turquoise: false,
+    },
+    dragonFruit: {
+        name: "Dragon Fruit",
+        value: "dragonFruit",
+        color: "red",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
+    },
+    hotHibiscus: {
+        name: "Hot Hibiscus",
+        value: "hotHibiscus",
+        color: "red",
+        percentOWG: 0,
+        gramsPerPound: 0,
+        ouncesPerPound: 0,
+        turquoise: false,
+    },
+    hotPink: {
+        name: "Hot Pink",
+        value: "hotPink",
+        color: "red",
+        percentOWG: 0,
+        gramsPerPound: 0,
+        ouncesPerPound: 0,
+        turquoise: false,
+    },
+    pomegranate: {
+        name: "Pomegranate",
+        value: "pomegranate",
+        color: "red",
+        percentOWG: 4,
+        gramsPerPound: 18.1,
+        ouncesPerPound: 0.64,
+        turquoise: false,
+    },
+    powderPink: {
+        name: "Powder Pink",
+        value: "powderPink",
+        color: "red",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
+    },
+    amethyst: {
+        name: "Amethyst",
+        value: "amethyst",
+        color: "purple",
+        percentOWG: 2.4,
+        gramsPerPound: 10.8,
+        ouncesPerPound: 0.38,
+        turquoise: false,
+    },
+    hydrangea: {
+        name: "Hydrangea",
+        value: "hydrangea",
+        color: "purple",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
+    },
+    lilac: {
+        name: "Lilac",
+        value: "lilac",
+        color: "purple",
+        percentOWG: 1.8,
+        gramsPerPound: 8.2,
+        ouncesPerPound: 0.29,
+        turquoise: false,
+    },
+    orchid: {
+        name: "Orchid",
+        value: "orchid",
+        color: "purple",
+        percentOWG: 2.4,
+        gramsPerPound: 10.8,
+        ouncesPerPound: 0.38,
+        turquoise: false,
+    },
+    plum: {
+        name: "Plum",
+        value: "plum",
+        color: "purple",
+        percentOWG: 2.9,
+        gramsPerPound: 13,
+        ouncesPerPound: 0.46,
+        turquoise: false,
+    },
+    ultraViolet: {
+        name: "Ultra Violet",
+        value: "ultraViolet",
+        color: "purple",
+        percentOWG: 2.2,
+        gramsPerPound: 9.9,
+        ouncesPerPound: 0.35,
+        turquoise: false,
+    },
+    wisteria: {
+        name: "Wisteria",
+        value: "wisteria",
+        color: "purple",
+        percentOWG: 3.5,
+        gramsPerPound: 15.9,
+        ouncesPerPound: 0.56,
+        turquoise: false,
+    },
+    pewter: {
+        name: "Pewter",
+        value: "pewter",
+        color: "grey",
+        percentOWG: 2.4,
+        gramsPerPound: 10.8,
+        ouncesPerPound: 0.38,
+        turquoise: false,
+    },
+    gunMetalGrey: {
+        name: "Gun Metal Grey",
+        value: "gunMetalGrey",
+        color: "grey",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
+    },
+    silverLining: {
+        name: "Silver Lining",
+        value: "silverLining",
+        color: "grey",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
+    },
+    timberWolf: {
+        name: "Timber Wolf",
+        value: "timberWolf",
+        color: "grey",
+        percentOWG: 2,
+        gramsPerPound: 9.1,
+        ouncesPerPound: 0.32,
+        turquoise: false,
     },
 };
 
-const contactTopics = {
-    1: { value: "general", label: "General Information" },
-    2: { value: "donations", label: "Donations" },
-    3: { value: "website", label: "Website" },
-};
+const dyeStrengthOptions = [
+    {
+        name: "25%",
+        value: 0.25,
+    },
+    {
+        name: "50%",
+        value: 0.5,
+    },
+    {
+        name: "75%",
+        value: 0.75,
+    },
+    {
+        name: "100%",
+        value: 1,
+    },
+];
 
-// window.addEventListener('load', function() {
-//     let buttons = document.getElementsByClassName('BuyButton-Button');
-//     this.alert(buttons[0]);
-// })
+let dyeGramsPerPound = 0;
+let ouncesOfFabric = 16;
+let poundsOfFabric = ouncesOfFabric / 16;
+let dyeStrength = 1;
+let gramsOfDye = 0;
+let water = 0;
+let salt = 0;
+let sodaAsh = 0;
+let calsoleneOil = 0;
 
-function setContactFormLabels(labels) {
-    Object.keys(labels).forEach((key) => {
-        let element = document.getElementById(labels[key]["id"]);
-        let label = labels[key]["label"];
-        if (label.includes("Please")) {
-            element.classList.add("red-text");
-        } else element.classList.remove("red-text");
-        element.innerText = label;
+function setDyeOptions(dyes) {
+    const element = document.getElementById("dye-select");
+    element.addEventListener("input", (e) => {
+        dyeGramsPerPound = dyes[e.target.value].gramsPerPound;
+        document.getElementById("dye-grams-per-pound-output").innerText =
+            dyeGramsPerPound;
+        document.getElementById("dye-output").innerText =
+            dyes[e.target.value].name;
+        calculate();
     });
-}
-
-function setContactTopics(topics) {
-    console.log(topics);
-    const element = document.getElementById("topic-input");
-    Object.keys(topics).forEach((key) => {
-        console.log(key);
+    const firstOption = document.createElement("option");
+    firstOption.setAttribute("value", null);
+    firstOption.innerText = "Select a Dye";
+    element.appendChild(firstOption);
+    const sortedDyeNames = Object.keys(dyes).sort();
+    for (let i = 0; i < sortedDyeNames.length; i++) {
         const option = document.createElement("option");
-        option.setAttribute("value", topics[key]["value"]);
-        option.innerText = topics[key]["label"];
+        const dye = sortedDyeNames[i];
+        option.setAttribute("value", dyes[dye]["value"]);
+        option.innerText = dyes[dye]["name"];
         element.appendChild(option);
-    });
-}
-
-async function validateFormData() {
-    const elements = document.getElementsByClassName("contact-form-element");
-    console.log(elements);
-    for (var i = 0; i < elements.length; i++) {
-        contactFormData[elements[i].dataset.key] = elements[i].value;
     }
-    console.log(contactFormData);
 }
 
-setContactFormLabels(contactFormLabels);
-setContactTopics(contactTopics);
+function setFabricWeightOptions() {
+    const element = document.getElementById("fabric-weight-select");
+    element.addEventListener("input", (e) => {
+        ouncesOfFabric = e.target.value;
+        poundsOfFabric = ouncesOfFabric / 16;
+        document.getElementById("pounds-of-fabric-output").innerText =
+            poundsOfFabric;
+        calculate();
+    });
+    for (let i = 1; i < 20; i++) {
+        const option = document.createElement("option");
+        option.setAttribute("value", i * 2);
+        option.innerText = i * 2;
+        element.appendChild(option);
+    }
+    element.value = ouncesOfFabric;
+}
 
-//document.getElementById("question-input").value = "test";
+function setDyeStrengthOptions(options) {
+    const element = document.getElementById("dye-strength-select");
+    element.addEventListener("input", (e) => {
+        dyeStrength = e.target.value;
+        document.getElementById("dye-strength-output").innerText =
+            100 * dyeStrength;
+        calculate();
+    });
+    for (let i = 0; i < options.length; i++) {
+        const option = document.createElement("option");
+        option.setAttribute("value", options[i].value);
+        option.innerText = options[i].name;
+        element.appendChild(option);
+    }
+    element.value = dyeStrength;
+}
 
-document.getElementById("contact-submit").addEventListener("click", (event) => {
-    new Promise(function (resolve, reject) {
-        return resolve("yay");
-    })
-        .then((response) => {
-            //console.log(response);
-            const element = document.getElementById("question-input");
-            //console.log("here", element.value);
-            if (element.value) {
-                throw new Error("No Bueno");
-            }
-        })
-        .then(() => {
-            let valid = true;
-            let topicValue = document.getElementById("topic-input").value;
-            let questionValue = document.getElementById("question-input").value;
-            let nameValue = document.getElementById("name-input").value;
-            let emailValue = document.getElementById("email-input").value;
-            let emailValid =
-                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
-                    emailValue
-                );
-            let messageValue = document.getElementById("message-input").value;
-            contactFormLabels.topicLabel.label = topicValue
-                ? "Topic"
-                : "Please choose a topic.";
-            contactFormLabels.nameLabel.label = nameValue
-                ? "Name"
-                : "Please enter your name.";
-            contactFormLabels.emailLabel.label = emailValid
-                ? "Email"
-                : "Please enter a valid email.";
-            contactFormLabels.messageLabel.label = messageValue
-                ? "Message"
-                : "Please enter your message.";
-            setContactFormLabels(contactFormLabels);
-            if (!topicValue || !nameValue || !emailValid || !messageValue) {
-                throw new Error("Invalid Form");
-            } else {
-                return {
-                    source: "Big Bridge Arts",
-                    topic: topicValue,
-                    honeyPot: questionValue,
-                    name: nameValue,
-                    email: emailValue,
-                    message: messageValue,
-                };
-            }
-        })
-        .then((data) => {
-            return fetch(
-                "https://oj6vub3ps7.execute-api.us-east-1.amazonaws.com/prod/contact",
-                {
-                    method: "POST",
-                    mode: "cors",
-                    credentials: "omit",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    redirect: "follow",
-                    body: JSON.stringify(data),
-                }
-            );
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log("RESPONSE: ", data);
-            let responseBody = JSON.parse(data);
-            let container = document.getElementById("contact-status-container")
-            let text = document.getElementById("contact-status-text")
-            if (responseBody.statusCode === 200) {
-                console.log("SUCCESS");
-                container.classList.remove('hidden-container');
-                text.innerHTML = 'Your message was sent. Thank you for reaching out.'
-                setTimeout(() => {
-                    container.classList.add('hidden-container');
-                  }, "10000");
-            } else {
-                container.classList.remove('hidden-container');
-                text.innerHTML = `There was a problem sending your message. Please send an email to <a href="mailto:hello@bigbridgearts.org">hello@bigbridgearts.org</a>.`
-                throw new Error("Contact Form Submission Error");
-            }
-        })
+function setInitialValues() {}
 
-        // response.json())
+function calculate() {
+    document.getElementById("dye-grams-per-pound-output").innerText =
+        dyeGramsPerPound;
+    document.getElementById("pounds-of-fabric-output").innerText =
+        poundsOfFabric;
+    document.getElementById("dye-strength-output").innerText =
+        100 * dyeStrength;
+    document.getElementById("total-grams-of-dye-output").innerText = (
+        dyeGramsPerPound *
+        poundsOfFabric *
+        dyeStrength
+    ).toFixed(2);
+    let gallonsOfWater = poundsOfFabric * 3;
+    document.getElementById("water-output").innerText = gallonsOfWater;
+    document.getElementById("salt-output").innerText = gallonsOfWater;
+    document.getElementById("soda-ash-output").innerText = (
+        gallonsOfWater / 9
+    ).toFixed(2);
+    document.getElementById("calsolene-output").innerText = (
+        gallonsOfWater * 0.5
+    ).toFixed(2);
+}
 
-        .catch((error) => {
-            console.error("Error:", error);
-        });
-});
-
-//     const formData = new FormData(event.target); // Get form data
-
-//     fetch("/your-api-endpoint", {
-//         method: "POST", // Or the appropriate method
-//         body: formData,
-//     })
-//         .then((response) => {
-//             // Handle the response from your API
-//             if (response.ok) {
-//                 return response.json();
-//             } else {
-//                 throw new Error("Network response was not ok");
-//             }
-//         })
-//         .then((data) => {
-//             // Do something with the response data
-//             console.log("Success:", data);
-//         })
-//         .catch((error) => {
-//             // Handle errors
-//             console.error("Error:", error);
-//         });
-// });
+setDyeOptions(dyes);
+setFabricWeightOptions();
+setDyeStrengthOptions(dyeStrengthOptions);
+calculate();
 
 const footerYear = document.getElementById("footer-text");
-footerYear.innerText = `   \xa9 ${new Date().getFullYear()} - Big Bridge Arts   `;
+footerYear.innerText = `   \xa9 ${new Date().getFullYear()} - Yay Soap!   `;

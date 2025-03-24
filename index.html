@@ -1,42 +1,27 @@
 <!DOCTYPE html>
 
-<!--
-Big Bridge Arts
-                        _____
-          _______      /     \
-   (\~/) /       \           ||
-   /öö/       /''\           //
-   *`  m'm~~~m __/\=========//
-
-Community Art Events
--->
-
-
 <html lang="en">
     <head>
-        <title>Big Bridge Arts</title>
+        <title>Dye Calculator</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Big Bridge Arts is a nonprofit based in Portland, Oregon. Our mission is facilitate community, creativity and self-expression."
-        />
-        <meta
-            name="keywords"
-            content="art events, commmunity, nonprofit, portland, oregon, art"
-        />
-        <meta property="og:title" content="Big Bridge Arts" />
+        <meta name="description" content="My Own little Dye Calculator." />
+        <meta name="keywords" content="dye, fabric" />
+        <meta property="og:title" content="Dye Calculator" />
         <meta
             property="og:description"
-            content="Big Bridge Arts is a nonprofit based in Portland, Oregon. Our mission is facilitate community, creativity and self-expression."
+            content="My Own little Dye Calculator."
         />
         <meta
             property="og:image"
             content="https://bigbridgearts.org/big-bridge-logo-300.png"
         />
-        <meta property="og:url" content="https://bigbridgearts.org" />
+        <meta
+            property="og:url"
+            content="https://dye-calculator.justinlmartin.com"
+        />
         <meta property="og:type" content="website" />
-        <link rel=”canonical” href=”https://bigbridgearts.org” />
+        <link rel=”canonical” href=”https://dye-calculator.justinlmartin.com” />
         <link
             rel="icon"
             type="image/svg+xml"
@@ -44,346 +29,79 @@ Community Art Events
             sizes="any"
         />
         <link rel="stylesheet" href="resources/css/style.css" />
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-9PCQG82EFB"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "G-9PCQG82EFB");
-        </script>
-        <script
-            src="https://www.google.com/recaptcha/api.js?render=explicit"
-            async
-            defer
-        ></script>
-        <script
-            type="text/javascript"
-            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-        ></script>
-        <script type="text/javascript">
-            (function ($) {
-                window.fnames = new Array();
-                window.ftypes = Array();
-                fnames[0] = "EMAIL";
-                ftypes[0] = "email";
-                fnames[6] = "FULLNAME";
-                ftypes[6] = "text";
-                fnames[1] = "FNAME";
-                ftypes[1] = "text";
-                fnames[2] = "LNAME";
-                ftypes[2] = "text";
-                fnames[3] = "ADDRESS";
-                ftypes[3] = "address";
-                fnames[4] = "PHONE";
-                ftypes[4] = "phone";
-                fnames[5] = "BIRTHDAY";
-                ftypes[5] = "birthday";
-            })(jQuery);
-            var $mcj = jQuery.noConflict(true);
-        </script>
-        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     </head>
     <body>
         <header>
             <div class="title-container">
                 <div class="title-text-container">
-                    <h1>Big Bridge Arts</h1>
-                    <h2>Community Art Events</h2>
+                    <h1>Dye Calculator</h1>
                 </div>
             </div>
             <nav></nav>
         </header>
         <div id="main">
-            <section id="mission-statement-section" class="home-section">
-                <h3 id="mission-statement-header">Mission Statement</h3>
-                <p id="mission-statement-text">
-                    The mission of Big Bridge Arts is to foster creativity,
-                    community, and self-expression by creating opportunities for
-                    communities to gather, create and share their
-                    experience.
-                </p>
+            <section id="selectors">
+                <h3 id="selectors-header">Select</h3>
+                <label for="dye-select">Select the Dye:</label>
+                <select name="dye-select" id="dye-select"></select>
+                <label for="fabric">Select the Fabric Weight:</label>
+                <select
+                    name="fabric-weight-select"
+                    id="fabric-weight-select"
+                ></select>
+                <label for="dye-strength-select"
+                    >Select the Dye Strength:</label
+                >
+                <select
+                    name="dye-strength-select"
+                    id="dye-strength-select"
+                ></select>
             </section>
-            <section id="donation-section" class="home-section">
-                <h3 id="donation-header">Donate</h3>
-                <p id="donate-text-1">
-                    Big Bridge Arts provides all of the supplies for its art events. 
-                    Small financial donations help us purchase those supplies. You can make a financial donation 
-                    with the button below. If you would like to donate art supplies please reach out using the 
-                    contact form below.
+            <section id="output">
+                <h3 id="output-header">Output</h3>
+                <p>
+                    Dye:
+                    <span id="dye-output"></span>
                 </p>
-                <div class="stripe-button-container">
-                    <stripe-buy-button
-                        buy-button-id="buy_btn_1QpLjdECi5l1G64D70Gn2oKS"
-                        publishable-key="pk_live_51QTTxXECi5l1G64DayYVzQ9feQ7WVwzKxDlWKlOxJfR1pLyc1I4avoHRtKYKsjBpdJ4MCFbphccnxZv0xqmDj6gf00sP9VWGHs"
-                        ></stripe-buy-button>
-                </div>
-                <p id="donate-text-2" class="hidden">
-                    You can make a recurring monthly donation.
+                <p>
+                    Grams of Dye per Pound of Fabric:
+                    <span id="dye-grams-per-pound-output"></span>
+                    grams
                 </p>
-                <div class="recurring-donation-container hidden">
-                    <div class="stripe-button-container">
-                        <stripe-buy-button
-                            buy-button-id="buy_btn_1QpM8mECi5l1G64DTBIlPy4A"
-                            publishable-key="pk_live_51QTTxXECi5l1G64DayYVzQ9feQ7WVwzKxDlWKlOxJfR1pLyc1I4avoHRtKYKsjBpdJ4MCFbphccnxZv0xqmDj6gf00sP9VWGHs"
-                        ></stripe-buy-button>
-                    </div>
-                    <div class="stripe-button-container">
-                        <stripe-buy-button
-                            buy-button-id="buy_btn_1QoutIECi5l1G64D2MDPrMwy"
-                            publishable-key="pk_live_51QTTxXECi5l1G64DayYVzQ9feQ7WVwzKxDlWKlOxJfR1pLyc1I4avoHRtKYKsjBpdJ4MCFbphccnxZv0xqmDj6gf00sP9VWGHs"
-                        ></stripe-buy-button>
-                    </div>
-                    <div class="stripe-button-container">
-                        <stripe-buy-button
-                            buy-button-id="buy_btn_1QpMN7ECi5l1G64D1azUE60Y"
-                            publishable-key="pk_live_51QTTxXECi5l1G64DayYVzQ9feQ7WVwzKxDlWKlOxJfR1pLyc1I4avoHRtKYKsjBpdJ4MCFbphccnxZv0xqmDj6gf00sP9VWGHs"
-                        ></stripe-buy-button>
-                    </div>
-                </div>
-            </section>
-            <section id="contact-section" class="home-section">
-                <h3 id="donation-header">Contact</h3>
-                <p id="donate-text">
-                    If you are interested in setting up a community art event, would like to donate 
-                    supplies or just want to learn more about Big Bridge Arts please use the contact form below.
+                <p>
+                    Pounds of Fabric:
+                    <span id="pounds-of-fabric-output"></span> pounds
                 </p>
-                <div id="contact-form-container" class="form-container">
-                    <div id="contact-form">
-                        <div class="form-item">
-                            <label id="topic-label" for="topic"></label>
-                            <select
-                                name="topic"
-                                id="topic-input"
-                                class="contact-form-element"
-                                data-key="topic"
-                            >
-                                <option value="">
-                                    Please Select a Topic...
-                                </option>
-                            </select>
-                        </div>
-                        <!-- Honey Pot -->
-                        <div class="form-item nobueno">
-                            <label id="question-label" for="question-input"
-                                >Question</label
-                            >
-                            <input
-                                id="question-input"
-                                type="text"
-                                class="contact-form-element"
-                                data-key="question"
-                            />
-                        </div>
-                        <!-- End Honey Pot -->
-                        <div class="form-item">
-                            <label id="name-label" for="name-input"></label>
-                            <input
-                                type="text"
-                                id="name-input"
-                                class="contact-form-element"
-                                data-key="name"
-                            />
-                        </div>
-                        <div class="form-item">
-                            <label id="email-label" for="email-input"></label>
-                            <input
-                                type="email"
-                                id="email-input"
-                                class="contact-form-element"
-                                data-key="email"
-                            />
-                        </div>
-                        <div class="form-item">
-                            <label
-                                id="message-label"
-                                for="message-input"
-                            ></label>
-                            <textarea
-                                id="message-input"
-                                rows="4"
-                                class="contact-form-element"
-                                data-key="message"
-                            ></textarea>
-                        </div>
-                        <div
-                            class="form-item g-recaptcha"
-                            data-sitekey="6LdjcyopAAAAAMPJZizsFgiUm5Y7UhX0hIVdfkia"
-                            data-theme="dark"
-                        ></div>
-                        <button id="contact-submit">Submit</button>
-                    </div>
-                    <div id="contact-status-container" class="hidden-container">
-                        <p id="contact-status-text">
-                            Your message was sent. Thank you for reaching out.
-                        </p>
-                    </div>
-                </div>
+                <p>
+                    Total Grams of Dye (
+                    <span id="dye-strength-output"></span>
+                    % Strength): <span id="total-grams-of-dye-output"></span>
+                    grams
+                </p>
+                <p>
+                    Gallons of Water:
+                    <span id="water-output"></span>
+                    gallons
+                </p>
+                <p>
+                    Cups of Salt:
+                    <span id="salt-output"></span>
+                    cups
+                </p>
+                <p>
+                    Cups of Soda Ash:
+                    <span id="soda-ash-output"></span>
+                    cups
+                </p>
+                <p>
+                    Teaspoons of Calsolene Oil:
+                    <span id="calsolene-output"></span>
+                    tsps
+                </p>
+                <p></p>
             </section>
         </div>
         <footer>
-            <div class="footer-connect-container">
-                <div id="mc_embed_shell">
-                    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
-                    <div id="mc_embed_signup">
-                        <form
-                            action="https://justinlmartin.us14.list-manage.com/subscribe/post?u=e4daeca734a7f93ab16c5c443&amp;id=8683bd7f6e&amp;f_id=00d2b7e5f0"
-                            method="post"
-                            id="mc-embedded-subscribe-form"
-                            name="mc-embedded-subscribe-form"
-                            class="validate"
-                            target="_blank"
-                        >
-                            <div id="mc_embed_signup_scroll">
-                                <h3 class="footer-h3">
-                                    Subscribe to Our Newsletter
-                                </h3>
-                                <div class="subscribe-form-container">
-                                    <div class="indicates-required">
-                                        <span class="asterisk">*</span>
-                                        <span>indicates required</span>
-                                    </div>
-                                    <div class="mc-field-group mc-form-item">
-                                        <label for="mce-EMAIL">
-                                            <span>Email Address</span>
-                                            <span class="asterisk">*</span>
-                                        </label>
-                                        <input
-                                            type="email"
-                                            name="EMAIL"
-                                            class="required email"
-                                            id="mce-EMAIL"
-                                            required=""
-                                            value=""
-                                        />
-                                        <span
-                                            id="mce-EMAIL-HELPERTEXT"
-                                            class="helper_text"
-                                        ></span>
-                                    </div>
-                                    <div class="mc-field-group mc-form-item">
-                                        <label for="mce-FULLNAME"
-                                            >Name
-                                            <span class="asterisk"
-                                                >*</span
-                                            ></label
-                                        >
-                                        <input
-                                            type="text"
-                                            name="FULLNAME"
-                                            class="required text"
-                                            id="mce-FULLNAME"
-                                            required=""
-                                            value=""
-                                        />
-                                    </div>
-                                    <div id="mce-responses" class="clear foot">
-                                        <div
-                                            class="response"
-                                            id="mce-error-response"
-                                            style="display: none"
-                                        ></div>
-                                        <div
-                                            class="response"
-                                            id="mce-success-response"
-                                            style="display: none"
-                                        ></div>
-                                    </div>
-                                    <div
-                                        aria-hidden="true"
-                                        style="
-                                            position: absolute;
-                                            left: -5000px;
-                                        "
-                                    >
-                                        /* real people should not fill this in
-                                        and expect good things - do not remove
-                                        this or risk form bot signups */
-                                        <input
-                                            type="text"
-                                            name="b_5860c574daaf3c6a81b973530_e788a8eb9c"
-                                            tabindex="-1"
-                                            value=""
-                                        />
-                                    </div>
-                                    <div class="optionalParent">
-                                        <div class="clear foot mc-form-item">
-                                            <input
-                                                type="submit"
-                                                name="subscribe"
-                                                id="mc-embedded-subscribe"
-                                                class="button"
-                                                value="Subscribe"
-                                            />
-                                            <p class="mc-logo">
-                                                <a
-                                                    href="http://eepurl.com/iKjNQc"
-                                                    title="Mailchimp - email marketing made easy and fun"
-                                                >
-                                                    <span
-                                                        style="
-                                                            display: inline-block;
-                                                            background-color: transparent;
-                                                            border-radius: 4px;
-                                                        "
-                                                    >
-                                                        <img
-                                                            class="refferal_badge"
-                                                            src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-light.svg"
-                                                            alt="Intuit Mailchimp"
-                                                            style="
-                                                                width: 220px;
-                                                                height: 40px;
-                                                                display: flex;
-                                                                padding: 2px 0px;
-                                                                justify-content: center;
-                                                                align-items: center;
-                                                            "
-                                                        />
-                                                    </span>
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div id="footer-social-icons">
-                    <h3 class="footer-h3">Follow Us on Social Media</h3>
-                    <div class="social-icon-container">
-                        <a
-                            href="https://www.instagram.com/bigbridgearts/"
-                            target="_blank"
-                        >
-                            <img
-                                class="social-icon"
-                                src="./resources/icons/instagram.svg"
-                                href=""
-                                alt="Instagram Logo"
-                            />
-                        </a>
-                        <a
-                            href="https://www.facebook.com/bigbridgearts"
-                            target="_blank"
-                        >
-                            <img
-                                class="social-icon"
-                                src="./resources/icons/facebook.svg"
-                                href=""
-                                alt="Facebook Logo"
-                            />
-                        </a>
-                    </div>
-                </div>
-            </div>
             <div class="footer-message">
                 <span class="footer-emoji footer-emoji-flipped">🦄</span>
                 <span id="footer-text"></span>
