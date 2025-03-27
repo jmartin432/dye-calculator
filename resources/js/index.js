@@ -261,7 +261,7 @@ function setFabricWeightOptions() {
             poundsOfFabric;
         calculate();
     });
-    for (let i = 1; i < 20; i++) {
+    for (let i = 1; i <= 24; i++) {
         const option = document.createElement("option");
         option.setAttribute("value", i * 2);
         option.innerText = i * 2;
