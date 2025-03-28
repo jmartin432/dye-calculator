@@ -251,7 +251,7 @@ function display(results) {
         results.gramsOfFabric;
     document.getElementById("dye-output").innerText = results.dye;
     document.getElementById("grams-of-dye-output").innerText =
-        results.gramsOfFabric * results.percentOWG * results.dyeStrength;
+        results.gramsOfDye;
     document.getElementById("dye-strength-output").innerText =
         results.dyeStrength * 100;
     document.getElementById("water-output").innerText = results.gallonsOfWater;
