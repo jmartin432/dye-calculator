@@ -244,7 +244,7 @@ function setDyeStrengthOptions(options) {
 
 function display(results) {
     console.log(results);
-    document.getElementById("owg-output").innerText = results.percentOWG;
+    document.getElementById("owg-output").innerText = results.percentOWG * 100;
     document.getElementById("pounds-of-fabric-output").innerText =
         results.poundsOfFabric;
     document.getElementById("grams-of-fabric-output").innerText =
