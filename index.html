@@ -44,11 +44,23 @@
                 <h3 id="selectors-header">Select</h3>
                 <label for="dye-select">Select the Dye:</label>
                 <select name="dye-select" id="dye-select"></select>
+                <p>
+                    %OWG:
+                    <span id="owg-output"></span>
+                </p>
                 <label for="fabric">Select the Fabric Weight:</label>
                 <select
                     name="fabric-weight-select"
                     id="fabric-weight-select"
                 ></select>
+                <p>
+                    Pounds of Fabric:
+                    <span id="pounds-of-fabric-output"></span> pounds
+                </p>
+                <p>
+                    Grams of Fabric:
+                    <span id="grams-of-fabric-output"></span> grams
+                </p>
                 <label for="dye-strength-select"
                     >Select the Dye Strength:</label
                 >
@@ -56,6 +68,12 @@
                     name="dye-strength-select"
                     id="dye-strength-select"
                 ></select>
+                <br />
+                <a
+                    href="https://www.dharmatrading.com/cgi-bin/procion_yields.cgi"
+                    target="_blank"
+                    >Dharma Dye Yields
+                </a>
             </section>
             <section id="output">
                 <h3 id="output-header">Output</h3>
@@ -63,19 +81,15 @@
                     Dye:
                     <span id="dye-output"></span>
                 </p>
-                <p>
+                <!-- <p>
                     Grams of Dye per Pound of Fabric:
                     <span id="dye-grams-per-pound-output"></span>
                     grams
-                </p>
+                </p> -->
                 <p>
-                    Pounds of Fabric:
-                    <span id="pounds-of-fabric-output"></span> pounds
-                </p>
-                <p>
-                    Total Grams of Dye (
+                    Grams of Dye (
                     <span id="dye-strength-output"></span>
-                    % Strength): <span id="total-grams-of-dye-output"></span>
+                    % Strength ): <span id="grams-of-dye-output"></span>
                     grams
                 </p>
                 <p>
@@ -89,14 +103,14 @@
                     cups
                 </p>
                 <p>
-                    Cups of Soda Ash:
-                    <span id="soda-ash-output"></span>
-                    cups
-                </p>
-                <p>
                     Teaspoons of Calsolene Oil:
                     <span id="calsolene-output"></span>
                     tsps
+                </p>
+                <p>
+                    Cups of Soda Ash:
+                    <span id="soda-ash-output"></span>
+                    cups
                 </p>
                 <p></p>
             </section>

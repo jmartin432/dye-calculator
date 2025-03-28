@@ -2,226 +2,189 @@ const dyes = {
     brightYellow: {
         name: "Bright Yellow",
         value: "brightYellow",
-        color: "yellow",
+        colorFamily: "yellow",
         percentOWG: 0,
-        gramsPerPound: 0,
-        ouncesPerPound: 0,
         turquoise: false,
     },
     daffodil: {
         name: "Daffodil",
         value: "daffodil",
-        color: "yellow",
+        colorFamily: "yellow",
         percentOWG: 0,
-        gramsPerPound: 0,
-        ouncesPerPound: 0,
         turquoise: false,
     },
     deepYellow: {
         name: "Deep Yellow",
         value: "deepYellow",
-        color: "yellow",
+        colorFamily: "yellow",
         percentOWG: 0,
-        gramsPerPound: 0,
-        ouncesPerPound: 0,
         turquoise: false,
     },
     orangeSorbet: {
         name: "Orange Sorbet",
         value: "orangeSorbet",
-        color: "orange",
+        colorFamily: "orange",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
     watermelon: {
         name: "Watermelon",
         value: "watermelon",
-        color: "orange",
+        colorFamily: "orange",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
     softOrange: {
         name: "Soft Orange",
         value: "softOrange",
-        color: "orange",
+        colorFamily: "orange",
         percentOWG: 0,
-        gramsPerPound: 0,
-        ouncesPerPound: 0,
         turquoise: false,
     },
     dragonFruit: {
         name: "Dragon Fruit",
         value: "dragonFruit",
-        color: "red",
+        colorFamily: "red",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
     hotHibiscus: {
         name: "Hot Hibiscus",
         value: "hotHibiscus",
-        color: "red",
+        colorFamily: "red",
         percentOWG: 0,
-        gramsPerPound: 0,
-        ouncesPerPound: 0,
         turquoise: false,
     },
     hotPink: {
         name: "Hot Pink",
         value: "hotPink",
-        color: "red",
+        colorFamily: "red",
         percentOWG: 0,
-        gramsPerPound: 0,
-        ouncesPerPound: 0,
         turquoise: false,
     },
     pomegranate: {
         name: "Pomegranate",
         value: "pomegranate",
-        color: "red",
+        colorFamily: "red",
         percentOWG: 4,
-        gramsPerPound: 18.1,
-        ouncesPerPound: 0.64,
         turquoise: false,
     },
     powderPink: {
         name: "Powder Pink",
         value: "powderPink",
-        color: "red",
+        colorFamily: "red",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
     amethyst: {
         name: "Amethyst",
         value: "amethyst",
-        color: "purple",
+        colorFamily: "purple",
         percentOWG: 2.4,
-        gramsPerPound: 10.8,
-        ouncesPerPound: 0.38,
         turquoise: false,
     },
     hydrangea: {
         name: "Hydrangea",
         value: "hydrangea",
-        color: "purple",
+        colorFamily: "purple",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
     lilac: {
         name: "Lilac",
         value: "lilac",
-        color: "purple",
+        colorFamily: "purple",
         percentOWG: 1.8,
-        gramsPerPound: 8.2,
-        ouncesPerPound: 0.29,
         turquoise: false,
     },
     orchid: {
         name: "Orchid",
         value: "orchid",
-        color: "purple",
+        colorFamily: "purple",
         percentOWG: 2.4,
-        gramsPerPound: 10.8,
-        ouncesPerPound: 0.38,
         turquoise: false,
     },
     plum: {
         name: "Plum",
         value: "plum",
-        color: "purple",
+        colorFamily: "purple",
         percentOWG: 2.9,
-        gramsPerPound: 13,
-        ouncesPerPound: 0.46,
         turquoise: false,
     },
     ultraViolet: {
         name: "Ultra Violet",
         value: "ultraViolet",
-        color: "purple",
+        colorFamily: "purple",
         percentOWG: 2.2,
-        gramsPerPound: 9.9,
-        ouncesPerPound: 0.35,
         turquoise: false,
     },
     wisteria: {
         name: "Wisteria",
         value: "wisteria",
-        color: "purple",
+        colorFamily: "purple",
         percentOWG: 3.5,
-        gramsPerPound: 15.9,
-        ouncesPerPound: 0.56,
+        turquoise: false,
+    },
+    bahamaBlue: {
+        name: "Bahama Blue",
+        value: "bahamaBlue",
+        colorFamily: "blue",
+        percentOWG: 2.1,
+        turquoise: true,
+    },
+    brilliantBlue: {
+        name: "Brilliant Blue",
+        value: "brilliantBlue",
+        colorFamily: "blue",
+        percentOWG: 2.4,
+        turquoise: false,
+    },
+    kingfisherBlue: {
+        name: "Kingfisher Blue",
+        value: "kingfisherBlue",
+        colorFamily: "blue",
+        percentOWG: 4.0,
         turquoise: false,
     },
     pewter: {
         name: "Pewter",
         value: "pewter",
-        color: "grey",
+        colorFamily: "grey",
         percentOWG: 2.4,
-        gramsPerPound: 10.8,
-        ouncesPerPound: 0.38,
         turquoise: false,
     },
     gunMetalGrey: {
         name: "Gun Metal Grey",
         value: "gunMetalGrey",
-        color: "grey",
+        colorFamily: "grey",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
     silverLining: {
         name: "Silver Lining",
         value: "silverLining",
-        color: "grey",
+        colorFamily: "grey",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
     timberWolf: {
         name: "Timber Wolf",
         value: "timberWolf",
-        color: "grey",
+        colorFamily: "grey",
         percentOWG: 2,
-        gramsPerPound: 9.1,
-        ouncesPerPound: 0.32,
         turquoise: false,
     },
 };
 
-const dyeStrengthOptions = [
-    {
-        name: "25%",
-        value: 0.25,
-    },
-    {
-        name: "50%",
-        value: 0.5,
-    },
-    {
-        name: "75%",
-        value: 0.75,
-    },
-    {
-        name: "100%",
-        value: 1,
-    },
-];
+let options = {
+    dye: null,
+    percentOWG: 0,
+    ouncesOfFabric: 16,
+    dyeStrength: 1,
+};
 
-let dyeGramsPerPound = 0;
-let ouncesOfFabric = 16;
-let poundsOfFabric = ouncesOfFabric / 16;
-let dyeStrength = 1;
+// results = calculate(options);
+
 let gramsOfDye = 0;
 let water = 0;
 let salt = 0;
@@ -230,14 +193,6 @@ let calsoleneOil = 0;
 
 function setDyeOptions(dyes) {
     const element = document.getElementById("dye-select");
-    element.addEventListener("input", (e) => {
-        dyeGramsPerPound = dyes[e.target.value].gramsPerPound;
-        document.getElementById("dye-grams-per-pound-output").innerText =
-            dyeGramsPerPound;
-        document.getElementById("dye-output").innerText =
-            dyes[e.target.value].name;
-        calculate();
-    });
     const firstOption = document.createElement("option");
     firstOption.setAttribute("value", null);
     firstOption.innerText = "Select a Dye";
@@ -250,72 +205,94 @@ function setDyeOptions(dyes) {
         option.innerText = dyes[dye]["name"];
         element.appendChild(option);
     }
+    element.addEventListener("input", (e) => {
+        options.dye = dyes[e.target.value].value;
+        options.percentOWG = dyes[e.target.value].percentOWG;
+        calculate(options);
+    });
 }
 
-function setFabricWeightOptions() {
+function setFabricWeightOptions(options) {
     const element = document.getElementById("fabric-weight-select");
-    element.addEventListener("input", (e) => {
-        ouncesOfFabric = e.target.value;
-        poundsOfFabric = ouncesOfFabric / 16;
-        document.getElementById("pounds-of-fabric-output").innerText =
-            poundsOfFabric;
-        calculate();
-    });
     for (let i = 1; i <= 24; i++) {
         const option = document.createElement("option");
         option.setAttribute("value", i * 2);
         option.innerText = i * 2;
         element.appendChild(option);
     }
-    element.value = ouncesOfFabric;
+    element.value = options.ouncesOfFabric;
+    element.addEventListener("input", (e) => {
+        options.ouncesOfFabric = e.target.value;
+        calculate(options);
+    });
 }
 
 function setDyeStrengthOptions(options) {
     const element = document.getElementById("dye-strength-select");
-    element.addEventListener("input", (e) => {
-        dyeStrength = e.target.value;
-        document.getElementById("dye-strength-output").innerText =
-            100 * dyeStrength;
-        calculate();
-    });
-    for (let i = 0; i < options.length; i++) {
+    for (let i = 1; i < 5; i++) {
         const option = document.createElement("option");
-        option.setAttribute("value", options[i].value);
-        option.innerText = options[i].name;
+        option.setAttribute("value", i * 0.25);
+        option.innerText = (i * 25).toString() + "%";
         element.appendChild(option);
     }
-    element.value = dyeStrength;
+    element.value = options.dyeStrength;
+    element.addEventListener("input", (e) => {
+        options.dyeStrength = parseFloat(e.target.value);
+        calculate(options);
+    });
 }
 
-function setInitialValues() {}
-
-function calculate() {
-    document.getElementById("dye-grams-per-pound-output").innerText =
-        dyeGramsPerPound;
+function display(results) {
+    console.log(results);
+    document.getElementById("owg-output").innerText = results.percentOWG;
     document.getElementById("pounds-of-fabric-output").innerText =
-        poundsOfFabric;
+        results.poundsOfFabric;
+    document.getElementById("grams-of-fabric-output").innerText =
+        results.gramsOfFabric;
+    document.getElementById("dye-output").innerText = results.dye;
+    document.getElementById("grams-of-dye-output").innerText =
+        results.gramsOfFabric * results.percentOWG * results.dyeStrength;
     document.getElementById("dye-strength-output").innerText =
-        100 * dyeStrength;
-    document.getElementById("total-grams-of-dye-output").innerText = (
-        dyeGramsPerPound *
-        poundsOfFabric *
-        dyeStrength
-    ).toFixed(2);
-    let gallonsOfWater = poundsOfFabric * 3;
-    document.getElementById("water-output").innerText = gallonsOfWater;
-    document.getElementById("salt-output").innerText = gallonsOfWater;
-    document.getElementById("soda-ash-output").innerText = (
-        gallonsOfWater / 9
-    ).toFixed(2);
-    document.getElementById("calsolene-output").innerText = (
-        gallonsOfWater * 0.5
-    ).toFixed(2);
+        results.dyeStrength * 100;
+    document.getElementById("water-output").innerText = results.gallonsOfWater;
+    document.getElementById("salt-output").innerText = results.cupsOfSalt;
+    document.getElementById("calsolene-output").innerText =
+        results.teaspoonsOfCalsoleneOil;
+    document.getElementById("soda-ash-output").innerText =
+        results.cupsOfSodaAsh;
+}
+
+function calculate(options) {
+    console.log(options);
+    let results = {};
+    results.dye = dyes[options.dye] ? dyes[options.dye].name : "None";
+    results.percentOWG = dyes[options.dye]
+        ? dyes[options.dye].percentOWG / 100
+        : 0;
+    results.poundsOfFabric = options.ouncesOfFabric / 16;
+    results.gramsOfFabric =
+        Math.round((100 * options.ouncesOfFabric) / 0.0353) / 100;
+    results.dyeStrength = options.dyeStrength;
+    results.gramsOfDye =
+        Math.round(
+            results.percentOWG *
+                results.dyeStrength *
+                results.gramsOfFabric *
+                100
+        ) / 100;
+    results.gallonsOfWater = Math.round(100 * results.poundsOfFabric * 3) / 100;
+    results.cupsOfSalt = Math.round(100 * results.poundsOfFabric * 3) / 100;
+    results.teaspoonsOfCalsoleneOil =
+        Math.round(100 * results.gallonsOfWater * 0.5) / 100;
+    results.cupsOfSodaAsh =
+        Math.round((100 * results.gallonsOfWater) / 9) / 100;
+    display(results);
 }
 
 setDyeOptions(dyes);
-setFabricWeightOptions();
-setDyeStrengthOptions(dyeStrengthOptions);
-calculate();
+setFabricWeightOptions(options);
+setDyeStrengthOptions(options);
+calculate(options);
 
 const footerYear = document.getElementById("footer-text");
 footerYear.innerText = `   \xa9 ${new Date().getFullYear()} - Yay Soap!   `;

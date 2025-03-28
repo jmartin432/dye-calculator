@@ -67,6 +67,14 @@
     --span-mobile-size: 1rem;
     --required-color: #d73928;
 
+    --a-color: #fff;
+    --a-desktop-size: 1.25rem;
+    --a-mobile-size: 1rem;
+
+    --label-color: #fff;
+    --label-desktop-size: 1.25rem;
+    --label-mobile-size: 1rem;
+
     --card-color-1: #d6d68111;
     --card-color-2: #d6d68133;
 }
@@ -144,8 +152,6 @@ p {
     color: var(--p-color);
     font-size: var(--p-desktop-size);
     text-align: left;
-    padding: 2rem 0 1rem 0;
-    width: 60%;
     margin: auto;
 }
 
@@ -158,6 +164,16 @@ p {
 
 span {
     color: var(--span-color);
+}
+
+a {
+    color: var(--a-color);
+    font-size: var(--a-desktop-size);
+}
+
+label {
+    color: var(--label-color);
+    font-size: var(--label-desktop-size);
 }
 
 /* FOOTER */
