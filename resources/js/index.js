@@ -381,7 +381,8 @@ function calculate(options) {
     results.percentOWG = dyes[options.dye]
         ? dyes[options.dye].percentOWG / 100
         : 0;
-    results.poundsOfFabric = options.ouncesOfFabric / 16;
+    results.poundsOfFabric =
+        Math.round((100 * options.ouncesOfFabric) / 16) / 100;
     results.gramsOfFabric =
         Math.round(100 * options.ouncesOfFabric * 28.35) / 100;
     results.dyeStrength = options.dyeStrength;
