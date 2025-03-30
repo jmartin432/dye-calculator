@@ -295,4 +295,4 @@ setDyeStrengthOptions(options);
 calculate(options);
 
 const footerYear = document.getElementById("footer-text");
-footerYear.innerText = `   \xa9 ${new Date().getFullYear()} - Yay Soap!   `;
+footerYear.innerText = `   \xa9 ${new Date().getFullYear()} - Yay Art!   `;
