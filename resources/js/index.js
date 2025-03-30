@@ -383,7 +383,7 @@ function calculate(options) {
         : 0;
     results.poundsOfFabric = options.ouncesOfFabric / 16;
     results.gramsOfFabric =
-        Math.round((100 * options.ouncesOfFabric) / 0.0353) / 100;
+        Math.round(100 * options.ouncesOfFabric * 28.35) / 100;
     results.dyeStrength = options.dyeStrength;
     results.gramsOfDye =
         Math.round(
