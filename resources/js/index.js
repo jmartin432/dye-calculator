@@ -342,7 +342,7 @@ function setFabricWeightOptions(options) {
 
 function setDyeStrengthOptions(options) {
     const element = document.getElementById("dye-strength-select");
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i <= 5; i++) {
         const option = document.createElement("option");
         option.setAttribute("value", i * 0.25);
         option.innerText = (i * 25).toString() + "%";
