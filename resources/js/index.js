@@ -187,6 +187,7 @@ const dyes = {
         colorFamily: "gray",
         percentOWG: 2.0,
         turquoise: false,
+        notes: "Stir well to avoid red clumps. Dharma's %OWG (2.0) seems a little low. try more than 100%",
     },
     silverLining: {
         name: "Silver Lining",
